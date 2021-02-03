@@ -6,7 +6,7 @@ export default function Item(props) {
   const handleToggleClicks = (e, val) => {
     let id = e.target.id;
     let attr = val;
-    const newData = props.list.map((element) => {
+    const newData = data.map((element) => {
       if (element.id === parseInt(id)) {
         element[attr] = !element[attr];
       }

@@ -4,8 +4,8 @@ export default function SearchItem() {
   return (
     <div className="ui-container mt-40 mb-30">
       <form>
-        <div class="ui seven column grid">
-          <div class="column">
+        <div className="ui seven column grid">
+          <div className="column">
             <div className="ui fluid category mini search">
               <div className="ui icon input">
                 <i className="times circle icon"></i>
@@ -17,8 +17,8 @@ export default function SearchItem() {
               </div>
             </div>
           </div>
-          <div class="column">
-            <button class="ui primary button mini circular">Search</button>
+          <div className="column">
+            <button className="ui primary button mini circular">Search</button>
           </div>
         </div>
       </form>

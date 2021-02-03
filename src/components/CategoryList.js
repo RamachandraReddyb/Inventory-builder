@@ -2,17 +2,24 @@ import React, { useState, useEffect } from "react";
 import SubCategoryList from "./SubCategoryList";
 
 export default function CategoryList() {
-  const [inventoryData, setInventoryData] = useState([]);
+  const [inventoryData, setInventoryData] = useState(
+    JSON.parse(localStorage.getItem("categories")) || []
+  );
 
   useEffect(() => {
-    fetch("./data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => setInventoryData(data));
+    let tempData = JSON.parse(localStorage.getItem("categories"));
+    if (tempData) {
+      setInventoryData(tempData);
+    } else {
+      fetch("./data.json", {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => setInventoryData(data));
+    }
     return () => {};
   }, []);
 
@@ -27,6 +34,7 @@ export default function CategoryList() {
       return element;
     });
     setInventoryData(newData);
+    localStorage.setItem("categories", JSON.stringify(inventoryData));
   };
 
   return (
