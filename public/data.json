@@ -1,0 +1,139 @@
+
+[
+    {
+        "id": 1,
+        "name" : "Vegetables & fruits",        
+        "availability": true,
+        "isShow" : true,
+        "subcategory": [
+            {
+            "id": 1,
+            "name" : "vegetables",            
+            "availability": true,
+            "isShow" : true,
+            "items": [
+                {
+                    "id" : 1,
+                    "name": "Cucumber",
+                    "color": "#00b121",
+                    "options": "large",
+                    "skuid": "02596053",
+                    "stocks": 24,
+                    "isEdit": false,
+                    "isUnlimited" : false
+                },
+                {
+                    "id" : 2,
+                    "name": "Carrot",
+                    "color": "#00b121",
+                    "options": "large",
+                    "skuid": "02596053",
+                    "stocks": 12,
+                    "isEdit": false,
+                    "isUnlimited" : false
+                },
+                {
+                    "id" : 3,
+                    "name": "Green chilli",
+                    "color": "#004341",
+                    "options": "large",
+                    "skuid": "02596053",
+                    "stocks": 10,
+                    "isEdit": false,
+                    "isUnlimited" : false
+                }
+            ]
+            },
+            {
+                "id": 2,
+                "name" : "Fruits",            
+                "availability": true,
+                "isShow" : true,
+                "items": [
+                    {
+                        "id" : 1,
+                        "name": "Pineapple",
+                        "color": "#00b121",
+                        "options": "large",
+                        "skuid": "02596053",
+                        "stocks": 44,
+                        "isEdit": false,
+                        "isUnlimited" : false
+                    },
+                    {
+                        "id" : 2,
+                        "name": "Banana",
+                        "color": "#fefefe",
+                        "options": "large",
+                        "skuid": "02596053",
+                        "stocks": 19,
+                        "isEdit": false,
+                        "isUnlimited" : false
+                    },
+                    {
+                        "id" : 3,
+                        "name": "Orange",
+                        "color": "#345678",
+                        "options": "large",
+                        "skuid": "02596053",
+                        "stocks": 23,
+                        "isEdit": false,
+                        "isUnlimited" : false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name" : "Breads",        
+        "availability": false,
+        "isShow" : false,
+        "subcategory": [
+            {
+            "id": 1,
+            "name" : "Breads",            
+            "availability": true,
+            "isShow" : true,
+            "items": [
+                {
+                    "id" : 1,
+                    "name": "Sweet bread",
+                    "color": "#00b121",
+                    "options": "large",
+                    "skuid": "02596053",
+                    "stocks": 24,
+                    "isEdit": false,
+                    "isUnlimited" : false
+                }
+            ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name" : "Snacks",        
+        "availability": true,
+        "isShow" : false,
+        "subcategory": [
+            {
+            "id": 1,
+            "name" : "Snacks",
+            "availability": true,
+            "isShow" : false,
+            "items": [
+                {
+                    "id" : 1,
+                    "name": "Pop corn",
+                    "color": "#00b121",
+                    "options": "large",
+                    "skuid": "02596053",
+                    "stocks": 24,
+                    "isEdit": false,
+                    "isUnlimited" : false
+                }
+            ]
+            }
+        ]
+    }
+]
