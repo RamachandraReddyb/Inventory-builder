@@ -1,3 +1,7 @@
+# Output Screen
+
+![alt text](https://github.com/RamachandraReddyb/Inventory-builder/blob/main/public/screen/inventory-builder.png?raw=true)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
